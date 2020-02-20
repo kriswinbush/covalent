@@ -25,7 +25,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { CovalentHighlightModule } from '../platform/highlight';
 import { CovalentHttpModule } from '../platform/http';
 import { CovalentMarkdownModule } from '../platform/markdown';
@@ -44,6 +44,7 @@ import { CovalentExpansionPanelModule } from '../platform/core/expansion-panel';
 import { CovalentNotificationsModule } from '../platform/core/notifications';
 import { CovalentMenuModule } from '../platform/core/menu';
 import { CovalentMediaModule } from '../platform/core/media';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [DocsAppComponent, HomeComponent], // directives, components, and pipes owned by this NgModule
@@ -64,6 +65,8 @@ import { CovalentMediaModule } from '../platform/core/media';
     MatGridListModule,
     MatTooltipModule,
     MatSnackBarModule,
+    MatFormFieldModule,
+    MatSelectModule,
     /** Covalent Modules */
     CovalentLayoutModule,
     CovalentExpansionPanelModule,

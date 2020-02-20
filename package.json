@@ -38,7 +38,9 @@
     "prettier": "./node_modules/.bin/prettier --write './**/*.{ts,js,json,css,scss,yml,html,md}'",
     "prettier:check": "./node_modules/.bin/prettier --check './**/*.{ts,js,json,css,scss,yml,html,md}'",
     "commitlint": "node ./node_modules/@commitlint/travis-cli/lib/cli.js",
-    "build:ghpages": "./node_modules/@angular/cli/bin/ng build --prod --optimization --output-path covalent-docs --base-href covalent"
+    "build:ghpages": "./node_modules/@angular/cli/bin/ng build --prod --optimization --output-path covalent-docs --base-href covalent",
+    "deploy:ghpages": "./node_modules/@koumoul/bin/gh-pages-multi deploy -s covalent-docs -t ${npm_package_version}",
+    "gh-pages": "npm run build:ghpages && deploy:ghpages"
   },
   "engines": {
     "node": ">=10.15.3",
@@ -102,6 +104,7 @@
     "@angular/cli": "^9.0.0",
     "@angular/compiler-cli": "^9.0.0",
     "@covalent/coding-standards": "file:src/platform/coding-standards",
+    "@koumoul/gh-pages-multi": "^0.7.1",
     "@types/codemirror": "0.0.80",
     "@types/fs-extra": "^4.0.0",
     "@types/hammerjs": "^2.0.30",
