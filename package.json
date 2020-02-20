@@ -37,7 +37,8 @@
     "a11y": "scripts/a11y/a11y.sh -r scripts/a11y/routes.txt",
     "prettier": "./node_modules/.bin/prettier --write './**/*.{ts,js,json,css,scss,yml,html,md}'",
     "prettier:check": "./node_modules/.bin/prettier --check './**/*.{ts,js,json,css,scss,yml,html,md}'",
-    "commitlint": "node ./node_modules/@commitlint/travis-cli/lib/cli.js"
+    "commitlint": "node ./node_modules/@commitlint/travis-cli/lib/cli.js",
+    "build:ghpages": "./node_modules/@angular/cli/bin/ng build --prod --optimization --output-path covalent-docs --base-href covalent"
   },
   "engines": {
     "node": ">=10.15.3",
