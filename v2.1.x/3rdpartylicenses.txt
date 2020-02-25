@@ -1,5 +1,3 @@
-undefined
-
 @angular/animations
 MIT
 
@@ -655,6 +653,8 @@ END OF TERMS AND CONDITIONS
 
 typo-js
 BSD-3-Clause
+
+undefined
 
 web-animations-js
 Apache-2.0
