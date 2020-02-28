@@ -4,12 +4,12 @@
 -->
 <div layout="row" layout-align="end center" flex>
   <button mat-button [matMenuTriggerFor]="verMenu">
-    {{ '2.0.0' }}
+    {{ version }}
     <mat-icon>arrow_drop_down</mat-icon>
   </button>
   <mat-menu #verMenu="matMenu">
     <a mat-menu-item href="https://kriswinbush.github.io/covalent/v1.0.x">1.0.1</a>
-    <a mat-menu-item href="https://kriswinbush.github.io/covalent/latest">2.1.x</a>
+    <a mat-menu-item href="https://kriswinbush.github.io/covalent/latest">{{ version }}</a>
   </mat-menu>
     <span flex></span>
     <nav hide-xs hide-sm class="text-upper text-sm docs-nav" layout="row">

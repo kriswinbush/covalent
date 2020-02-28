@@ -9,7 +9,7 @@ import { DOCUMENT } from '@angular/common';
 import { Dir } from '@angular/cdk/bidi';
 
 import { getDirection, setDirection } from '../../utilities/direction';
-
+import { environment } from "../../../environments/environment";
 @Component({
   selector: 'td-toolbar',
   templateUrl: '././toolbar.component.html',
@@ -19,7 +19,7 @@ export class ToolbarComponent {
   updates: Object[] = [];
 
   dir: 'ltr' | 'rtl' = getDirection();
-
+  version: string = environment.VERSION;
   constructor(private _renderer: Renderer2,
               private _dir: Dir,
               @Inject(DOCUMENT) private _document: any) {
