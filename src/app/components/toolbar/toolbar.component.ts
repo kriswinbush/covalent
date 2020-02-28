@@ -9,7 +9,7 @@ import { DOCUMENT } from '@angular/common';
 import { Dir } from '@angular/cdk/bidi';
 
 import { getDirection, setDirection } from '../../utilities/direction';
-import { environment } from "../../../environments/environment";
+import { environment } from '../../../environments/environment';
 @Component({
   selector: 'td-toolbar',
   templateUrl: '././toolbar.component.html',
