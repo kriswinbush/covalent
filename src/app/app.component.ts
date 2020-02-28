@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { getSelectedLanguage } from './utilities/translate';
 import { getDirection } from './utilities/direction';
 
+import { environment } from '../environments/environment';
 @Component({
   selector: 'docs-covalent',
   templateUrl: './app.component.html',
@@ -56,7 +57,7 @@ export class DocsAppComponent {
   ];
 
   dir: string;
-
+  version: string = environment.VERSION;
   constructor(
     private _iconRegistry: MatIconRegistry,
     private _domSanitizer: DomSanitizer,
